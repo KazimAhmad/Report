@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Bold;
+\f3\froman\fcharset0 Times-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Project 
+\f1\fs32 \expnd0\expndtw0\kerning0
+is a fleet management solution that combines true fleet intelligence and great customer service for companies worldwide.\'a0Smartphone App is a mobile application.\
+\pard\pardeftab720\partightenfactor0
+\cf0 The Smartphone App are made to be used by fleet managers. After login, the user are able to consult the fleet vehicles, drivers, trips, paths, etc. The user can also interact with drivers, find the nearest vehicles, block vehicles and receive activity notifications of each vehicle.\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Architecture\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf0 The code is structured according with\'a0Model-View-Presenter architecture.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 User Interface\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf0 The interface implementation is being done dynamically, in code. Use of storyboards is being avoided.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Client\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf0 The requests to the API is being implemented with\'a0
+\f3\i Alamofire.\'a0
+\f1\i0 The received JSONs are parsed with\'a0
+\f3\i Decodable
+\f1\i0  or similar.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Local Data base\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i\b0\fs32 \cf0 Realm
+\f1\i0  database is being used to storage local data in Smartphone App.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Notification service\
+\pard\pardeftab720\partightenfactor0
+
+\f3\i\b0\fs32 \cf0 Firebase
+\f1\i0  is being used to process the notification service.\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Testing
+\f1\b0\fs32 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+In the unit tests, all of the used methods needed to be stubbed with the expected arguments and needed responses.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+In the integration tests, since the models are not mocked and their methods not stubbed, a "mock web server" needs to be used where the the url requests are mapped with local JSON responses\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf0 Others technologies\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf0 Google Maps API should be used.\
+}
